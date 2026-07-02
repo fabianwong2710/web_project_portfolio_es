@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Fabian Wong | Full-Stack Developer</title>
+
+    <!-- Descripción para SEO -->
+    <meta
+      name="description"
+      content="Portfolio de Fabian Wong, Desarrollador Full-Stack Junior especializado en HTML, CSS, JavaScript, React y Node.js."
+    />
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ==================================================
+       HEADER
+       --------------------------------------------------
+       De momento permanece vacío porque el diseño de
+       Figma todavía no incluye una barra de navegación.
+       En el futuro aquí podremos agregar:
+       - Logo
+       - Menú
+       - Botón hamburguesa
+       ================================================== -->
+
+    <header class="site-header"></header>
+
+    <!-- ==================================================
+       CONTENIDO PRINCIPAL
+       ================================================== -->
+
+    <main>
+      <!-- ==================================================
+         HERO
+         Primera sección que ve el usuario.
+         Está dividida en dos columnas:
+         Izquierda -> Información personal
+         Derecha -> Fotografía
+         ================================================== -->
+
+      <section id="home" class="hero">
+        <div class="presentacion">
+          <!-- ==========================================
+             COLUMNA IZQUIERDA
+             ========================================== -->
+
+          <div class="presentacion-info">
+            <!-- Nombre y profesión -->
+
+            <div class="container">
+              <h1>Fabian Wong</h1>
+
+              <p>
+                Desarrollador Full-Stack Junior | TypeScript, React, Node.js
+              </p>
+            </div>
+
+            <!-- ==========================================
+               SOBRE MÍ
+               ========================================== -->
+
+            <section id="about" class="about container">
+              <p>
+                Desarrollador web junior con experiencia práctica creando
+                interfaces limpias y responsivas con HTML, CSS, así como
+                implementando lógica básica de back-end. Ha trabajado en
+                proyectos formativos que siguen procesos reales de desarrollo,
+                usando Git, GitHub y Figma. Disfruta colaborar en equipo,
+                mantener un código claro y resolver problemas de forma
+                estructurada. Motivado por seguir aprendiendo, asumir nuevos
+                retos y aprovechar oportunidades para crecer como desarrollador.
+              </p>
+
+              <!-- Navegación principal del Hero -->
+              <nav class="nav" aria-label="Enlaces principales">
+                <ul class="nav-list">
+                  <li>
+                    <a href="#cv">Descargar CV</a>
+                  </li>
+
+                  <li>
+                    <a href="#github">GitHub</a>
+                  </li>
+
+                  <li>
+                    <a href="#hablemos">Hablemos</a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="presentacion-imagen">
+            <img
+              src="images/perfilfabian.jpg"
+              alt="Fotografía de Fabian Wong"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+         HABILIDADES Y HERRAMIENTAS
+         Tecnologías con las que trabajo.
+         ================================================== -->
+
+      <section id="habilidadesyherramientas" class="habilidades container">
+        <h2>Habilidades y Herramientas</h2>
+
+        <ul class="skills-list">
+          <li><img src="images/1.png" alt="HTML5" /></li>
+          <li><img src="images/2.png" alt="CSS3" /></li>
+          <li><img src="images/3.png" alt="JavaScript" /></li>
+          <li><img src="images/4.png" alt="Git" /></li>
+          <li><img src="images/5.png" alt="GitHub" /></li>
+          <li><img src="images/6.png" alt="ChatGPT" /></li>
+        </ul>
+      </section>
+
+      <!-- ==================================================
+         PROYECTOS DESTACADOS
+         Aquí se muestran algunos de mis trabajos.
+         Cada proyecto está dentro de un article porque
+         es un contenido independiente.
+         ================================================== -->
+
+      <section id="proyectos" class="proyectos-destacados">
+        <h2>Proyectos destacados</h2>
+        <div class="project-grid">
+          <article class="proyecto">
+            <div class="proyecto-imagen">
+              <img
+                src="images/Rectangle 3.png"
+                class="imagen-de-proyecto"
+                alt="Página web de una cafetería"
+              />
+              <div class="proyecto-iconos">
+                <img src="images/1.png" alt="HTML5" />
+                <img src="images/2.png" alt="CSS3" />
+              </div>
+            </div>
+            <h3>Página web de una cafetería</h3>
+            <p>
+              Desarrollo de una landing page responsiva para una cafetería
+              siguiendo un brief de diseño. Incluye estructura semántica,
+              maquetación con Flexbox, creación de nuevas secciones y un
+              formulario de contacto funcional. El proyecto fue publicado
+              utilizando GitHub Pages.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <img
+                  src="images/demoenvivo.png"
+                  alt="Icono de enlace a demo en vivo"
+                />
+              </a>
+              <a href="#" class="project-link">
+                <img src="images/github.png" alt="Icono de enlace a GitHub" />
+              </a>
+            </div>
+          </article>
+          <article class="proyecto">
+            <div class="proyecto-imagen">
+              <img
+                src="images/Rectangle 5.png"
+                class="imagen-de-proyecto"
+                alt="Mi proyecto"
+              />
+
+              <div class="proyecto-iconos">
+                <img src="images/3.png" alt="HTML5" />
+                <img src="images/7.png" alt="CSS3" />
+              </div>
+            </div>
+            <h3>Mi Proyecto</h3>
+            <p>Descripcion del proyecto.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <img
+                  src="images/demoenvivo.png"
+                  alt="Icono de enlace a demo en vivo"
+                />
+              </a>
+              <a href="#" class="project-link">
+                <img src="images/github.png" alt="Icono de enlace a GitHub" />
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================
+       FOOTER
+       Información de contacto y redes sociales.
+  ================================================= -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <h2 class="footer-title">Contacto</h2>
+
+        <p class="footer-email">fabian.wong@email.com</p>
+
+        <div class="footer-social">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="images/Social Icons/LinkedIn/Negative.png"
+              alt="LinkedIn"
+            />
+          </a>
+
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <img
+              src="images/Social Icons/Facebook/Negative.png"
+              alt="Facebook"
+            />
+          </a>
+
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <img
+              src="images/Social Icons/Instagram/Negative.png"
+              alt="Instagram"
+            />
+          </a>
+
+          <a
+            href="https://x.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+          >
+            <img src="images/Social Icons/X (Twitter)/Negative.png" alt="X" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Actualiza automáticamente el año del copyright -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
