@@ -1,21 +1,62 @@
-# Mi Portfolio - Plantilla responsiva
+# Portfolio Personal - Fabian Wong
 
-Plantilla básica para practicar diseño responsivo (web, tablet, móvil).
+## Descripción
 
-Archivos:
+Este proyecto corresponde a mi portafolio web personal, desarrollado como parte de mi formación en desarrollo web. Su objetivo es presentar mi perfil profesional, mis habilidades técnicas, algunos de los proyectos que he realizado y los medios para contactarme.
 
-- `index.html` - Estructura HTML principal.
-- `styles.css` - Estilos mobile-first y breakpoints.
+El sitio fue diseñado siguiendo un prototipo en Figma y desarrollado con un enfoque responsive para ofrecer una experiencia adecuada en dispositivos de escritorio, tablet y móviles.
 
-Cómo usar:
+## Tecnologías utilizadas
 
-1. Abrir `index.html` en un navegador.
-2. Editar contenidos (tu nombre, proyectos, textos).
-3. Probar con las herramientas de desarrollo del navegador (modo responsive).
+- HTML5 semántico
+- CSS3
+- Flexbox
+- CSS Grid
+- Media Queries
+- Variables CSS
+- Fuentes locales mediante `@font-face`
+- Gradientes radiales (`radial-gradient`)
+- Transiciones y efectos hover
+- Git y GitHub
+- GitHub Pages
 
-Siguientes pasos recomendados:
+## Características
 
-- Ajustar tipografías y escalas.
-- Añadir imágenes optimizadas y `alt`.
-- Mejorar accesibilidad (labels, roles, focus).
-- Implementar animaciones y optimizaciones de carga.
+- Diseño completamente responsive.
+- Presentación personal.
+- Sección "Sobre mí".
+- Habilidades y herramientas.
+- Proyectos destacados.
+- Enlaces a GitHub, CV y redes sociales.
+- Fondo personalizado con efectos de iluminación.
+- Tipografía personalizada utilizando Open Sans y Archivo Black.
+
+## Estructura del proyecto
+
+```
+web_project_portfolio_es/
+│
+├── fonts/
+├── images/
+├── styles/
+│   └── index.css
+|   └──normalize.css
+├── .editorconfig
+├── .gitignore
+├── index.html
+└── README.md
+```
+
+## Ver el proyecto
+
+GitHub Pages:
+
+git@github.com:fabianwong2710/web_project_portfolio_es.git
+
+## Autor
+
+Fabian Wong
+
+GitHub:
+
+https://github.com/fabianwong2710
