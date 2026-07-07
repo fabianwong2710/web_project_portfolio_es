@@ -1,4 +1,43 @@
 /*==================================================
+  FUENTES
+==================================================*/
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("fonts/ArchivoBlack-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/*==================================================
   RESET
 ==================================================*/
 * {
@@ -13,7 +52,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: Inter, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.6;
   color: var(--text);
 
@@ -47,6 +86,9 @@ body {
 
   --text: #fff;
   --text-secondary: #bdbdbd;
+
+  --font-heading: "Archivo Black", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 
   --container: 1200px;
 
@@ -172,11 +214,21 @@ a:focus {
 .hero h1 {
   max-width: 793px;
   width: 100%;
+  font-family: var(--font-heading);
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--text);
 }
 
 .hero p {
   max-width: 790px;
   width: 100%;
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-secondary);
 }
 
 /*==================================================
@@ -504,11 +556,6 @@ a:focus {
   object-fit: contain;
 }
 
-.footer-copy {
-  font-size: 15px;
-  color: var(--text-secondary);
-}
-
 /*==================================================
   ANIMACIONES
 ==================================================*/
@@ -603,9 +650,10 @@ a:focus {
   }
 
   .presentacion {
-    grid-template-columns: 1fr 300px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
     gap: 30px;
+    align-items: center;
     text-align: left;
   }
 
@@ -613,10 +661,13 @@ a:focus {
     align-items: flex-start;
   }
 
-  .hero h1,
-  .hero p,
-  .about p {
-    width: 100%;
+  .presentacion-imagen {
+    justify-content: flex-end;
+  }
+
+  .presentacion-imagen img {
+    width: 300px;
+    height: 390px;
   }
 
   .hero h1 {
@@ -636,32 +687,10 @@ a:focus {
     line-height: 30px;
   }
 
-  .nav {
-    margin-top: 35px;
-  }
-
   .nav-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-  }
-
-  .presentacion-imagen {
-    justify-content: flex-end;
-  }
-
-  .presentacion-imagen img {
-    width: 300px;
-    height: 390px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .habilidades h2,
-  .proyectos-destacados h2 {
-    font-size: 34px;
   }
 
   .skills-list {
@@ -670,76 +699,38 @@ a:focus {
   }
 
   .skills-list li {
-    width: auto;
     height: 80px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 /*==================================================
   MOBILE
 ==================================================*/
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .presentacion {
     display: flex;
     flex-direction: column;
-    text-align: center;
   }
 
   .presentacion-imagen {
     order: -1;
-    justify-content: center;
-  }
-
-  .presentacion-info {
-    align-items: center;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .about p {
-    font-size: 15px;
-    line-height: 28px;
   }
 
   .nav-list {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
   }
 
-  .presentacion-imagen img {
-    width: 250px;
-    height: 330px;
-  }
-
   .skills-list {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
   }
-
-  .skills-list li {
-    height: 70px;
-  }
-
-  .skills-list img {
-    width: 38px;
-    height: 38px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .habilidades h2,
-  .proyectos-destacados h2 {
-    font-size: 28px;
-  }
+}
+* {
+  outline: 1px solid red;
 }
