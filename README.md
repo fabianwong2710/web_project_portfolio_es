@@ -36,6 +36,7 @@ El sitio fue diseñado siguiendo un prototipo en Figma y desarrollado con un enf
 ```
 web_project_portfolio_es/
 │
+├── favicon/
 ├── fonts/
 ├── images/
 ├── styles/
